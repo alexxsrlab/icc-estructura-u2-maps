@@ -8,19 +8,24 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         System.out.println("----Practica Mapas----");
-        System.out.println("Nombre: Juan Perez"); /// Cambiar por su nombre
+        System.out.println("Nombre: Ariel Badillo"); /// Cambiar por su nombre
         // Ejecuta el ejemplo de uso de HashMap con ejemplos sencillos
         runMapExamlpe();
 
         // // Ejecuta el ejemplo de gestión de empleados usando HashMap
-        // runEmpleadoExample();
+        runEmpleadoExample();
 
         // // Ejecuta los ejercicios de sumatoria y anagramas
-        // runEjerccios();
+        runEjerccios();
     }
 
     private static void runMapExamlpe() {
         Mapa mapa = new Mapa();
+        mapa.runHasMap();
+        mapa.runLinkedHashMap();
+        mapa.runTreeMap();
+        mapa.runHashMapObj();
+        mapa.runTreeMapObj();
     }
 
     private static void runEmpleadoExample() {
