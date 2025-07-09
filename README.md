@@ -155,3 +155,5 @@ Para administrar un directorio telefónico sin claves duplicadas y ordenado por 
 ![Captura666](https://github.com/user-attachments/assets/b80c4a13-25fb-460c-9ec8-0befd042fab1)
 
 
+<img width="229" alt="kkkkkkkkkkkkkkkk" src="https://github.com/user-attachments/assets/7f2750fc-05d5-46a0-9e51-75944f64b126" />
+
