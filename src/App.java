@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 import controllers.Ejercicios;
 import controllers.EmpleadoContoller;
 import controllers.EmpleadoDAOHashMap;
@@ -16,10 +18,10 @@ public class App {
         //runMapExamlpe();
 
         // // Ejecuta el ejemplo de gestión de empleados usando HashMap
-        runEmpleadoExample();
+        //runEmpleadoExample();
 
         // // Ejecuta los ejercicios de sumatoria y anagramas
-        
+        runEjerccios();
     }
 /* 
     private static void runMapExamlpe() {
@@ -36,7 +38,7 @@ public class App {
         System.out.println("RUNTREEMAPOBJ");
         mapa.runTreeMapObj();
     }
-*/
+
 
     private static void runEmpleadoExample() {
         EmpleadoDao empDaoHash = new EmpleadoDAOHashMap();
@@ -74,9 +76,34 @@ public class App {
         empControllerTree.removerEmps(2);
         empControllerTree.listarEmps();
     }
-
+*/
     private static void runEjerccios() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        Ejercicios ejercicios = new Ejercicios();
 
+        System.out.println("areAnagrams:");
+        System.out.println("listen vs silent: " + Ejercicios.areAnagrams("listen", "silent")); 
+        System.out.println("hello vs bello: " + Ejercicios.areAnagrams("hello", "bello"));     
+        System.out.println("triangle vs integral: " + Ejercicios.areAnagrams("triangle", "integral")); 
+        System.out.println();
+
+        System.out.println(" sumatoriaDeDos:");
+        int[] nums1 = {9, 2, 3, 6};
+        int objetivo1 = 5;
+        int[] resultado1 = ejercicios.sumatoriaDeDos(nums1, objetivo1);
+        System.out.println("nums = [9,2,3,6], objetivo = 5 -> " + Arrays.toString(resultado1)); 
+
+        int objetivo2 = 10;
+        int[] resultado2 = ejercicios.sumatoriaDeDos(nums1, objetivo2);
+        System.out.println("nums = [9,2,3,6], objetivo = 10 -> " + Arrays.toString(resultado2)); 
+        System.out.println();
+
+        System.out.println(" contarCaracteres:");
+        String texto = "hola";
+        System.out.print("Texto: \"" + texto + "\" -> ");
+        ejercicios.contarCaracteres(texto); 
+
+        System.out.println(" sonAnagramas:");
+        System.out.println("roma vs amor: " + ejercicios.sonAnagramas("roma", "amor")); 
+        
     }
 }
